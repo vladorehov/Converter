@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "IValueLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IValueLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IValueLib.dll": {}
+        }
+      },
+      "ValuesLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "IValueLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ValuesLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ValuesLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IValueLib/1.0.0": {
+      "type": "project",
+      "path": "../IValueLib/IValueLib.csproj",
+      "msbuildProject": "../IValueLib/IValueLib.csproj"
+    },
+    "ValuesLib/1.0.0": {
+      "type": "project",
+      "path": "../ValuesLib/ValuesLib.csproj",
+      "msbuildProject": "../ValuesLib/ValuesLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "ValuesLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Лис\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Лис\\Desktop\\converter\\ConverterLib\\ConverterLib.csproj",
+      "projectName": "ConverterLib",
+      "projectPath": "C:\\Users\\Лис\\Desktop\\converter\\ConverterLib\\ConverterLib.csproj",
+      "packagesPath": "C:\\Users\\Лис\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Лис\\Desktop\\converter\\ConverterLib\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Лис\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Лис\\Desktop\\converter\\ValuesLib\\ValuesLib.csproj": {
+              "projectPath": "C:\\Users\\Лис\\Desktop\\converter\\ValuesLib\\ValuesLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
